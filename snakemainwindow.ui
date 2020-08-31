@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SnakeMainWindow</class>
+ <widget class="QMainWindow" name="SnakeMainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SnakeMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1084</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSaveGame"/>
+    <addaction name="actionLoadGame"/>
+   </widget>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <addaction name="action_Start"/>
+    <addaction name="actionPAUSE"/>
+    <addaction name="actionRESUME"/>
+    <addaction name="actionRESTART"/>
+    <addaction name="actionQUIT"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuGame"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Start"/>
+   <addaction name="actionPAUSE"/>
+   <addaction name="actionRESUME"/>
+   <addaction name="actionRESTART"/>
+   <addaction name="actionQUIT"/>
+  </widget>
+  <action name="action_Start">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionSaveGame">
+   <property name="text">
+    <string>SaveGame</string>
+   </property>
+  </action>
+  <action name="actionLoadGame">
+   <property name="text">
+    <string>LoadGame</string>
+   </property>
+  </action>
+  <action name="actionPAUSE">
+   <property name="text">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionRESUME">
+   <property name="text">
+    <string>Resume</string>
+   </property>
+  </action>
+  <action name="actionRESTART">
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </action>
+  <action name="actionQUIT">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
